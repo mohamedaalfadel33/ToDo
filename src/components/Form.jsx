@@ -29,7 +29,7 @@ const Form = ({ addTodo, onHandelReset }) => {
           />
         </svg>
       </div>
-      <form onSubmit={handelSubmit}>
+      <form onSubmit={handelSubmit} className='from'>
         <input
           type="text"
           placeholder="Enter your task"

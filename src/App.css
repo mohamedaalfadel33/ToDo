@@ -11,7 +11,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(/images/5KnwccW-purple-wallpaper-backgrounds.jpg);
 }
+
 .container {
   background: #1a1a40;
   margin-top: 5rem;
@@ -92,6 +94,20 @@ h1 {
   padding: 0.8rem;
   margin-bottom: 1rem;
   align-items: center;
+  position: relative;
+
+  animation: fade-in 500ms forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 100;
+  }
 }
 
 .todo {
@@ -107,4 +123,22 @@ h1 {
   margin-left: 1rem;
   background-color: #8758ff;
   cursor: pointer;
+}
+
+@media (max-width: 513px) {
+  .form-input {
+    margin-bottom: 0;
+  }
+
+  .from {
+    display: grid;
+  }
+  .icon {
+    width: 1.7rem;
+    bottom: -1.5rem;
+  }
+
+  .task {
+    margin-top: 1rem;
+  }
 }
